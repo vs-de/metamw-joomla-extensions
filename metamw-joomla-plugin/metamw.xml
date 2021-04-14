@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension version="3.5" type="plugin" group="system" method="upgrade">
+	<name>MetaMw</name>
+	<author>Valentin Schulte</author>
+	<creationDate>March 2020</creationDate>
+	<copyright>(C) 2020 Valentin Schulte Coding. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL Version 2</license>
+	<authorEmail>valentin@vs-coding.de</authorEmail>
+	<authorUrl>https://vs-coding.de</authorUrl>
+	<version>0.9</version>
+	<description>Connection to MetaMW Data</description>
+	<files>
+		<filename plugin="metamw">metamw.php</filename>
+		<filename>config.php</filename>
+	</files>
+        <media folder="media" destination="plg_metamw">
+          <folder>js</folder>
+          <folder>css</folder>
+        </media>
+	<params>
+		<param name="result_entry_limit" type="text" size="5" default="20" label="" description="number of search results per page"/>		
+	</params>
+        <config>
+          <fields name="params">
+            <fieldset name="basic">
+              <field 
+                name="api_base_url"
+                type="text"
+                default="localhost:3005"
+                description="base URL of middleware server running MetaMW. It must lead to the root api endpoint."
+                label="middleware api endpoint"
+              />
+              <field
+                name="base_path"
+                type="text"
+                default="/"
+                description="base path for representing single objects"
+                label="base path"
+              />
+              <field
+                name="letter_path"
+                type="text"
+                default="letter"
+                description="path leading to a letter"
+                label="letter path"
+              />
+              <field
+                name="person_path"
+                type="text"
+                default="person"
+                description="path representing a person"
+                label="person path"
+              />
+              <field
+                name="creation_path"
+                type="text"
+                default="creation"
+                description="path leading to a creation"
+                label="creation path"
+              />
+              <field
+                name="protag_creation_path"
+                type="text"
+                default="protag-creation"
+                description="path representing a creation of the protagonist"
+                label="protagonist creation path"
+              />
+              <field
+                name="sight_path"
+                type="text"
+                default="sight"
+                description="path representing single sight"
+                label="sight path"
+              />
+              <field
+                name="institution_path"
+                type="text"
+                default="institution"
+                description="path representing an institution"
+                label="institution path"
+              />
+              <field
+                name="settlement_path"
+                type="text"
+                default="settlement"
+                description="path leading to a settlement"
+                label="settlement path"
+              />
+            </fieldset>
+            
+            <fieldset name="basic">
+                <field
+                  name="sr_links_blank"
+                  type="checkbox"
+                  default="1"
+                  description="force search result links to open in new win/tab"
+                  label="SR link new"
+                />
+                <field
+                  name="box_links_blank"
+                  type="checkbox"
+                  default="1"
+                  description="force info box links to open in new win/tab"
+                  label="box link new"
+                />
+                <!--
+		<field
+                  name="result_entry_limit" 
+                  type="text" 
+                  size="5" 
+                  default="20" 
+                  label="results per page" description="number of search results per page"
+                />-->
+            </fieldset>
+          </fields>
+        </config>
+</extension>

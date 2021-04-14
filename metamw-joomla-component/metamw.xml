@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.5" method="upgrade">
+
+	<name>MetaMW Main Content</name>
+	
+        <author>Valentin Schulte</author>
+	<creationDate>March 2020</creationDate>
+	<copyright>(C) 2020 Valentin Schulte Coding. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL Version 2</license>
+	<authorEmail>valentin@vs-coding.de</authorEmail>
+	<authorUrl>https://vs-coding.de</authorUrl>
+	<version>0.9</version>
+	<description></description>
+
+	<update> <!-- Runs on update; New since J2.5 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>metamwmaincontent.php</filename>
+		<filename>controller.php</filename>
+                <folder>views</folder>
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu link='index.php?option=com_metamw'>MetaMW Main Content</menu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>metamwmaincontent.php</filename>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+		</files>
+                <languages folder="admin/language">
+                        <language tag="en-GB">en-GB/en-GB.com_metamwmaincontent.ini</language>
+                        <language tag="en-GB">en-GB/en-GB.com_metamwmaincontent.sys.ini</language>
+                        <language tag="de-DE">de-DE/de-DE.com_metamwmaincontent.ini</language>
+                        <language tag="de-DE">de-DE/de-DE.com_metamwmaincontent.sys.ini</language>
+                </languages>
+	</administration>
+
+</extension>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_METAMW_MAIN_CONTENT_METAMW_ENTITY_CONTENT_VIEW_DEFAULT_TITLE">
+		<message>COM_METAMW_MAIN_CONTENT_METAMW_ENTITY_CONTENT_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="entity_type"
+				type="list"
+				required="true" 
+				label="COM_METAMW_MAIN_CONTENT_METAMW_ENTITY_FIELD_TYPE_LABEL"
+				description="COM_METAMW_MAIN_CONTENT_METAMW_ENTITY_FIELD_TYPE_DESC"
+			>
+                          <option value="person">COM_METAMW_MAIN_CONTENT_METAMW_ENTITY_FIELD_TYPE_PERSON</option>
+                          <option value="creation">COM_METAMW_MAIN_CONTENT_METAMW_ENTITY_FIELD_TYPE_CREATION</option>
+                          <option value="protag-creation">COM_METAMW_MAIN_CONTENT_METAMW_ENTITY_FIELD_TYPE_PROTAG_CREATION</option>
+                          <option value="sight">COM_METAMW_MAIN_CONTENT_METAMW_ENTITY_FIELD_TYPE_SIGHT</option>
+                          <option value="institution">COM_METAMW_MAIN_CONTENT_METAMW_ENTITY_FIELD_TYPE_INSTITUTION</option>
+                          <option value="settlement">COM_METAMW_MAIN_CONTENT_METAMW_ENTITY_FIELD_TYPE_SETTLEMENT</option>
+                        </field>
+		</fieldset>
+	</fields>
+
+</metadata>

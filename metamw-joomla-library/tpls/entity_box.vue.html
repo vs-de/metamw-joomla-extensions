@@ -1,0 +1,14 @@
+<template v-if="ent">
+  
+  <div class="entity_name entity_hl">
+    <h3> {{ ent.name }} </h3>
+  </div>
+  <div class="field" v-for="(k_name, k) in tr_fields_for(ent)">
+    <label class="box-label"> {{ k_name }}: </label>
+    <span class="box-value"> {{ show_value(ent, k) }} </span>
+  </div>
+  <template v-if="ent.class == 'Person'">
+  </template>
+  <template v-if="ent.class == 'ProtagCreation'">
+  </template>
+</template>

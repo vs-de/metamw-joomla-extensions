@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>MetaMwInfoBox</name>
+    <author>Valentin Schulte</author>
+    <copyright>(C) 2020 Valentin Schulte Coding. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL Version 2</license>
+    <version>0.9</version>
+    <description>meta information box for MetaMW system</description>
+    <files>
+        <filename>mod_metamwinfobox.xml</filename>
+        <filename module="mod_metamwinfobox">mod_metamwinfobox.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <!-- <filename>tmpl/default.php</filename> -->
+        <!-- <filename>tmpl/index.html</filename> -->
+        <folder>tmpl</folder>
+    </files>
+    <config>
+    </config>
+</extension>

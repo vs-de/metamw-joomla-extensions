@@ -1,0 +1,37 @@
+TEI body persName,TEI body placeName,TEI body title {
+  cursor: pointer;
+}
+
+.spot_link {
+  cursor: pointer;
+}
+.note_link {
+  background-color: #c7c760;
+}
+.note_link.active {
+  background-color: #fc0502;
+}
+.comment_info_type {
+  font-size: 0.75rem;
+}
+.comment_box {
+  border-top: 1px solid grey;
+}
+.entity_hl {
+  background-color: #c7c720;
+}
+/*
+.note_hl {
+  background-color: #fc0502;
+}
+*/
+.in_doc_note {
+  cursor: pointer;
+  background-color: #c7c720;
+}
+.in_doc_note.active {
+  background-color: #fc0502;
+}
+.note_hl:before {
+  /* content: "[]" */
+}

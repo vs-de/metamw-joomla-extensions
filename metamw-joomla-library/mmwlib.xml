@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" method="upgrade" version="3.5">
+    <name>mmwlib-extension</name>
+    <libraryname>mmwlib</libraryname>
+    <author>Valentin Schulte</author>
+    <creationDate>April 2020</creationDate>
+    <copyright>Copyright (C) 2020 Valentin Schulte Coding. All rights reserved.</copyright>
+    <license>
+    https://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+    </license>
+    <authorEmail>valentin@vs-coding.de</authorEmail>
+    <authorUrl>vs-coding.de</authorUrl>
+    <version>0.86</version>
+    <description>
+      Meta MW main library
+    </description>
+    <files>
+      <folder>connector</folder>
+      <folder>tpls</folder>
+    </files>
+</extension>
